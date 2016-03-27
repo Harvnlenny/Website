@@ -63,6 +63,23 @@ tr:first-of-type { background-color: #50248A;
 .addLink {
   text-align: center;
 }
+form { background-color:#eaeaea;
+  font-family: Arial, sans-serif;
+    padding: 10px;
+    min-width: 400px;
+
+     }
+label { float: left;
+  width: 150px;
+    clear: left;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 10px;
+
+   }
+input, textarea { margin-top: 10px;
+                  display: block; }
+#mySubmit { margin-left: 160px; }
 </style>
 </head>
 <body>
@@ -82,13 +99,12 @@ tr:first-of-type { background-color: #50248A;
 <form method="post" action="http://webdevbasics.net/scripts/demo.php">
   <label for="website">*Website:</label>
   <input type="text" name="website" id="website">
-  <label for="myEmail">*E-mail:</label>
-  <input type="email" name="myEmail" id="myEmail" required="required" placeholder="you@yourdomain.com">
-  <label for="myRating">Rating (1 - 10):</label>
-<input type="range" name="myRating" id="myRating"
-min="1" max="10">
   <label for="description">*Description:</label>
-  <textarea name="description" id="description" rows="2" cols="20"></textarea>
+  <textarea name="description" id="description" rows="15" cols="30"></textarea>
+  <label for="price">*Price (Per Month):</label>
+  <input type="text" name="price" id="price">
+  <label for="link">*Link:</label>
+  <input type="text" name="link" id="link" cols="20">
   <input id="mySubmit" type="submit" value="Submit">
 </form>
 <footer>
